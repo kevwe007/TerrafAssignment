@@ -3,4 +3,4 @@
 /terraform.tfstate
 public-key.tf
 /private-key
-/.terraform.tfstate.backup
+/terraform.tfstate.backup
