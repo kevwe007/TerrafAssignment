@@ -1,5 +1,5 @@
 /.terraform
 /.terraform.lock.hcl
 /terraform.tfstate
-/.private-key
+/private-key_
 public-key.tf
