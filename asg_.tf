@@ -52,8 +52,8 @@ resource "aws_autoscaling_group" "new_front_end" {
   launch_configuration = aws_launch_configuration.new_launch_config.name
   health_check_type    = "ELB"
   min_size             = 0
-  max_size             = 2
-  desired_capacity     = 2
+  max_size             = 1
+  desired_capacity     = 1
 
   vpc_zone_identifier = [
     aws_subnet.new-private-2b.id,
@@ -77,8 +77,8 @@ resource "aws_autoscaling_group" "new_back_end" {
   launch_configuration = aws_launch_configuration.new_launch_config.name
   health_check_type    = "ELB"
   min_size             = 0
-  max_size             = 2
-  desired_capacity     = 2
+  max_size             = 1
+  desired_capacity     = 1
 
   vpc_zone_identifier = [
     aws_subnet.new-private-2b.id,
