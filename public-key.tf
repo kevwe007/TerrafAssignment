@@ -1,6 +1,0 @@
-# Create a key-pair
-
-resource "aws_key_pair" "ssh-key" {
-  key_name   = "ssh-key"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDB67a+objaAuGE/zqZLjLPTQRhC0UfN3rgovMFq6yVdDP8XSUlqq3WyrjoBl/9ArMQ4aFxn6ng6opJ/soE43HVd5O9fkIPb4YOrBdMS77UIkLrVfJNu7go8q2HqVog4eJWRMpbHSYU+BFZw1wWQWVKm0m3RGecyq71xevaLrCcdJGpXkKjdJetnxlnMaZfNkKF+1/KbCRYW6oUX9YnsmdMUMFH3qTsL9/XPJEzzmtAOnN7kTclf2pO+nenylB8cZWha+7/9FxFKfvKqCfeLW2TKgn8xJtdHjtdOa1TSENJnwTtwjs33Z8KKthS3j9EZl/aX8s19TF09SkHxhjKXB5hDI6GjrAX4f0cq6usxCt4HWu8X4GWaZGaZk8/3y1+HxxtHEJuGoNUBFsu97Qfxdl7IaJH8EE+S0gdtp8cgpyW+qBDVtLA3ZtZUTGu+cSchz86IBFOjeQ0ASlkPYmT9Oz8BJK/SMBNPwMTGPMbzmvjo4ynedORNWwJv7tzEJe8PZk= hopkins@Hopkinss-MacBook-Pro.local"
-}
