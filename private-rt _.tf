@@ -23,7 +23,7 @@ resource "aws_route_table" "new_private_route_table_2b" {
     vpc_id = aws_vpc.new_vpc.id
     route {
     cidr_block = "0.0.0.0/0"
-    nat_gateway_id = aws_nat_gateway.new-nat-gateway-2b.id
+    nat_gateway_id = aws_nat_gateway.new-nat-gateway-2a.id
   }
     tags =  {
         Name      = "New Private route table 2B"
@@ -32,7 +32,7 @@ resource "aws_route_table" "new_private_route_table_2b" {
 }
  
 resource "aws_route_table_association" "new-2b" {
-    subnet_id = aws_subnet.new-private-2b.id
+    subnet_id = aws_subnet.new-private-2a.id
     route_table_id = aws_route_table.new_private_route_table_2b.id
 }
 
@@ -42,7 +42,7 @@ resource "aws_route_table" "new_private_route_table_2c" {
     vpc_id = aws_vpc.new_vpc.id
     route {
     cidr_block = "0.0.0.0/0"
-    nat_gateway_id = aws_nat_gateway.new-nat-gateway-2c.id
+    nat_gateway_id = aws_nat_gateway.new-nat-gateway-2a.id
   }
     tags =  {
         Name      = "New Private route table 2c"
@@ -51,6 +51,6 @@ resource "aws_route_table" "new_private_route_table_2c" {
 }
  
 resource "aws_route_table_association" "new-2c" {
-    subnet_id = aws_subnet.new-private-2c.id
+    subnet_id = aws_subnet.new-private-2a.id
     route_table_id = aws_route_table.new_private_route_table_2c.id
 }
